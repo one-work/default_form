@@ -6,7 +6,7 @@ module DefaultForm
       help_key = DefaultForm.config.help_key.call(self, attribute)
       ::I18n.t help_key, default: nil
     end
-    
+
     def input_attributes_by_model
       cols = {}
 

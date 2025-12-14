@@ -9,6 +9,7 @@ module DefaultForm
       app.content_tag(:i, nil, class: 'fas fa-question-circle')
     end
   }
+  config.help_key = ->(o, attribute){ "#{o.i18n_scope}.help.#{o.base_class.model_name.i18n_key}.#{attribute}" }
   config.mapping = ActiveSupport::OrderedOptions.new
   config.mapping.date = {
     input: 'date_field',

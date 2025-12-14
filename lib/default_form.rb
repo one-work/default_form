@@ -1,6 +1,8 @@
-require "default_form/version"
-require "default_form/railtie"
+require 'default_form/railtie'
+require 'default_form/config'
 
-module DefaultForm
-  # Your code goes here...
-end
+require 'default_form/active_record/extend'
+require 'default_form/override/action_view/helpers/tags/collection_check_boxes'
+require 'default_form/override/action_view/helpers/tags/collection_radio_buttons'
+require 'default_form/controller_helper'
+require 'default_form/view_helper'

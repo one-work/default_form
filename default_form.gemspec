@@ -1,8 +1,6 @@
-require_relative "lib/default_form/version"
-
 Gem::Specification.new do |spec|
   spec.name        = "default_form"
-  spec.version     = DefaultForm::VERSION
+  spec.version     = '0.0.1'
   spec.authors     = [ "qinmingyuan" ]
   spec.email       = [ "mingyuan0715@foxmail.com" ]
   spec.homepage    = "TODO"
@@ -19,7 +17,12 @@ Gem::Specification.new do |spec|
   spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
 
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
-    Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
+    Dir[
+      "{app,config,db,lib}/**/*",
+      "MIT-LICENSE",
+      "Rakefile",
+      "README.md"
+    ]
   end
 
   spec.add_dependency "rails", ">= 8.1.1"

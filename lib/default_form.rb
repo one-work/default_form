@@ -1,6 +1,5 @@
 require 'default_form/config'
 require 'default_form/controller_helper'
-require 'default_form/form_builder'
 require 'default_form/railtie'
 require 'default_form/view_helper'
 

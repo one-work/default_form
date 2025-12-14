@@ -1,5 +1,5 @@
-module DefaultForm::ActiveRecord
-  module Extend
+module DefaultForm
+  module ActiveRecord
 
     def input_attributes_by_model
       cols = {}
@@ -34,5 +34,5 @@ module DefaultForm::ActiveRecord
 end
 
 ActiveSupport.on_load :active_record do
-  extend DefaultForm::ActiveRecord::Extend
+  extend DefaultForm::ActiveRecord
 end

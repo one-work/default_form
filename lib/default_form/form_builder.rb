@@ -1,14 +1,13 @@
 # frozen_string_literal: true
 
-require_relative 'builder/default'
 require_relative 'builder/helper'
-require_relative 'builder/wrap'
 
 module DefaultForm
   class FormBuilder < ActionView::Helpers::FormBuilder
     CSS_KEYS = [:origin, :wrap, :wrap_label, :all, :error, :before_wrap, :after_wrap, :before, :after]
     ON_KEYS = [:label, :placeholder, :autocomplete]
     include Builder::Helper
+
     attr_reader :on_options, :params
     delegate :content_tag, to: :@template
 

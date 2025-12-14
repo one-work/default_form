@@ -3,14 +3,14 @@
 require_relative 'form_builder'
 
 module DefaultForm
-  module DefaultForm::ViewHelper
+  module ViewHelper
 
-    def form_object(model = nil, scope: nil, builder: DefaultForm::FormBuilder, **options)
+    def form_object(model = nil, scope: nil, builder: FormBuilder, **options)
       scope ||= model_name_from_record_or_class(model).param_key if model
       instantiate_builder(scope, model, builder: builder, **options)
     end
 
-    def nested_form_object(parent_model, association_name, model:, index:, builder: DefaultForm::FormBuilder, **options)
+    def nested_form_object(parent_model, association_name, model:, index:, builder: FormBuilder, **options)
       parent_name = parent_model.model_name.param_key
       scope = "#{parent_name}[#{association_name}_attributes]"
       instantiate_builder(scope, model, index: index, builder: builder, **options)

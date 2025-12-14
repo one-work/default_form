@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require 'default_form/builder/wrap'
-require 'default_form/builder/default'
-require 'default_form/builder/helper'
+require_relative 'builder/default'
+require_relative 'builder/helper'
+require_relative 'builder/wrap'
 
 module DefaultForm
   class FormBuilder < ActionView::Helpers::FormBuilder

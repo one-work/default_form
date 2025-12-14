@@ -1,11 +1,11 @@
-require 'default_form/form_builder'
+require_relative 'form_builder'
 
 module DefaultForm
   module ControllerHelper
     extend ActiveSupport::Concern
 
     included do
-      default_form_builder DefaultForm::FormBuilder
+      default_form_builder FormBuilder
     end
   end
 end

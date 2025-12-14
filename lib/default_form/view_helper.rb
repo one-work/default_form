@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-require 'default_form/form_builder'
+require_relative 'form_builder'
+
 module DefaultForm
   module DefaultForm::ViewHelper
 

@@ -183,3 +183,8 @@ weui_search:
 switch:
   wrap:
     checkbox: label.switch.is-primary
+lexxy:
+  wrap:
+    submit: text-centered mt-2
+  origin:
+    submit: button is-medium is-primary

@@ -184,7 +184,12 @@ switch:
   wrap:
     checkbox: label.switch.is-primary
 lexxy:
+  <<: *defaults
+  all:
+    <<: *default_alls
   wrap:
+    <<: *default_wraps
     submit: text-centered mt-2
   origin:
+    <<: *default_origins
     submit: button is-medium is-primary

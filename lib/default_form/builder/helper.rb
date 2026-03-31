@@ -66,7 +66,6 @@ module DefaultForm
           default_options(method, options)
           options[:class] = css.dig(:origin, :checkbox) unless options.key?(:class)
           css[:all][:normal] = css.dig(:all, :checkbox)
-          options[:label_position] ||= 'after'
 
           label_content = ''
           if options[:label] && options[:label_position] == 'after'
@@ -101,7 +100,6 @@ module DefaultForm
           default_options(method, options)
           options[:class] = css.dig(:origin, :radio) unless options.key?(:class)
           css[:all][:normal] = css.dig(:all, :radio)
-          options[:label_position] ||= 'after'
 
           label_content = ''
           if options[:label] && options[:label_position] == 'after'

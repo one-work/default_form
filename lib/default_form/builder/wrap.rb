@@ -9,7 +9,7 @@ module DefaultForm
           css_ary = wrap.split(' > ')
           css_ary.reverse_each.with_index do |css, index|
             if css.include?('.')
-              _tag, _css = css.split('.')
+              _tag, *_css = css.split('.')
             else
               _tag = tag
               _css = css

@@ -182,7 +182,7 @@ weui_search:
     error: weui-cell
 switch:
   wrap:
-    checkbox: label.switch.is-primary
+    checkbox: label.switch.is-rounded.is-primary
 lexxy:
   <<: *defaults
   all:

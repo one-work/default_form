@@ -67,16 +67,16 @@ module DefaultForm
           options[:class] = css.dig(:origin, :checkbox) unless options.key?(:class)
           css[:all][:normal] = css.dig(:all, :checkbox)
 
-          label_content = ''
-          if options[:label] && options[:label_position] == 'after'
-            content = super + content_tag(:span, options.delete(:label))
-          elsif options[:label] && options[:label_position] == 'before'
-            content = content_tag(:span, options.delete(:label)) + super
-          elsif options[:label]
-            content = super
+          if options[:label]
             label_content = content_tag(:span, options.delete(:label), class: css.dig(:origin, :label))
           else
-            content = super
+            label_content = ''
+          end
+
+          if options[:label_position] == 'before'
+            content = label_content + super
+          else
+            content = super + label_content
           end
 
           wrap_content = wrapping(content, wrap: css.dig(:wrap, :checkbox))

@@ -3,6 +3,7 @@ defaults: &defaults
   label: true
 origin: &default_origins
   label: label text-grey
+  span: text-grey
   input: input
   textarea: textarea
   inline_checkbox: checkbox

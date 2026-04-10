@@ -68,7 +68,7 @@ module DefaultForm
           css[:all][:normal] = css.dig(:all, :checkbox)
 
           if options[:label]
-            label_content = content_tag(:span, options.delete(:label), class: css.dig(:origin, :label))
+            label_content = content_tag(:span, options.delete(:label), class: css.dig(:origin, :span))
           else
             label_content = ''
           end

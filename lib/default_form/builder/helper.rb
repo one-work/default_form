@@ -45,7 +45,6 @@ module DefaultForm
         wrap_all_with(nil, options) do |css|
           options[:class] = css.dig(:origin, :submit) unless options.key?(:class)
           options[:data] ||= {}
-          options[:data][:disable_with] = 'Searching'
           if self.options[:method] == 'get'
             options[:name] = nil
             if options[:data][:action].present?

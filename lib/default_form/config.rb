@@ -50,7 +50,7 @@ module DefaultForm
     output: 'to_s'
   }
   config.mapping.boolean = {
-    input: 'check_box',
+    input: 'checkbox',
     output: 'to_s'
   }
 end

@@ -13,7 +13,7 @@ module ActionView
             final_css = origin[:inline_checkbox]
           end
 
-          inner = builder.check_box + builder.label
+          inner = builder.checkbox + builder.label
           content_tag(:label, inner, class: final_css)
         end
 

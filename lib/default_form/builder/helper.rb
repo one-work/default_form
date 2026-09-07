@@ -60,7 +60,7 @@ module DefaultForm
         end
       end
 
-      def check_box(method, options = {}, checked_value = '1', unchecked_value = '0')
+      def checkbox(method, options = {}, checked_value = '1', unchecked_value = '0')
         wrap_all_with(method, options, tag: 'label') do |css|
           default_options(method, options)
           options[:class] = css.dig(:origin, :checkbox) unless options.key?(:class)

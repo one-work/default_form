@@ -73,7 +73,7 @@ modal:
   form: modal-card
   origin:
     <<: *default_origins
-    submit: button is-medium is-primary
+    submit: button is-rounded is-primary
   before_wrap:
     <<: *default_before_wraps
   wrap:
@@ -91,7 +91,7 @@ modal_line:
   form: modal-card
   origin:
     <<: *default_origins
-    submit: button is-medium is-primary
+    submit: button is-rounded is-primary
   wrap:
     submit: footer.modal-card-foot
 line:

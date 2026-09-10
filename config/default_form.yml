@@ -166,22 +166,8 @@ inline:
   origin:
     input: input is-small
     submit: button is-small is-primary
-weui_search:
-  <<: *searches
-  form: weui-cells weui-cells_form
-  origin:
-    label: weui-label
-    input: weui-input
-    select: weui-select
-    muilti_select: weui-select
-    submit: weui-btn weui-btn_primary
-  wrap:
-    input: weui-cell__bd
-    submit: weui-btn-area
-  all:
-    normal: weui-cell
-    error: weui-cell
 switch:
+  form: switch-form
   wrap:
     checkbox: label.switch.is-rounded.is-primary
 lexxy:

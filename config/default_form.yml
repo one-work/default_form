@@ -136,6 +136,8 @@ default_phone:
     radio: weui-cell__ft
   all:
     <<: *phone_all
+  error:
+    <<: *default_errors
   after:
     checkbox: <i class="weui-icon-checked"></i>
     radio: <i class="weui-icon-checked"></i>
@@ -150,6 +152,8 @@ phone_modal:
     submit: footer.modal-card-foot
   all:
     <<: *phone_all
+  error:
+    <<: *default_errors
 search:
   <<: *searches
   form: field is-horizontal

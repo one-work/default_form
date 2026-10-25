@@ -134,6 +134,7 @@ default_phone:
     <<: *phone_wrap
     checkbox: weui-cell__hd
     radio: weui-cell__ft
+    submit: mt-3
   all:
     <<: *phone_all
   error:

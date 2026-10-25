@@ -29,7 +29,7 @@ module DefaultForm
       ].freeze
 
       def fields(scope = nil, model: nil, **options, &block)
-        options[:theme] ||= @theme
+        options[:theme] ||= 'fields'
         super
       end
 

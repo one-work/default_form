@@ -185,3 +185,9 @@ lexxy:
   origin:
     <<: *default_origins
     submit: button is-medium is-primary
+fields:
+  <<: *defaults
+  wrap:
+    input: field
+  origin:
+    <<: *default_origins

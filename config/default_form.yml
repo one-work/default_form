@@ -120,6 +120,7 @@ phone_line:
     input: control
   all:
     normal: field
+    required: field
   error:
     <<: *default_errors
 phone_default:

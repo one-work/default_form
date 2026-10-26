@@ -1,9 +1,9 @@
 Gem::Specification.new do |spec|
   spec.name = "default_form"
   spec.version = '0.0.1'
-  spec.authors = [ "qinmingyuan" ]
-  spec.email = [ "mingyuan0715@foxmail.com" ]
-  spec.homepage = 'https://github.com/work-design/default_form.git'
+  spec.authors = ["qinmingyuan"]
+  spec.email = ["mingyuan0715@foxmail.com"]
+  spec.homepage = 'https://github.com/one-work/default_form.git'
   spec.summary = 'Summary of DefaultForm.'
   spec.description = 'Description of DefaultForm.'
   spec.license = 'MIT'

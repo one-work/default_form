@@ -48,6 +48,8 @@ phone_all: &phone_all
   select: field
   checkbox: weui-cell weui-cell_active weui-cell_switch
   radio: weui-cell weui-cell_active weui-cell_radio
+
+# 开始配置
 default:
   <<: *defaults
   origin:
@@ -120,7 +122,7 @@ line_phone:
     normal: field
   error:
     <<: *default_errors
-default_phone:
+phone_default:
   <<: *phone
   form: form-fields as-boxed
   origin:

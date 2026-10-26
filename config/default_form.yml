@@ -109,7 +109,7 @@ line:
     normal: field
   error:
     <<: *default_errors
-line_phone:
+phone_line:
   <<: *defaults
   origin:
     label: label text-grey

@@ -17,8 +17,7 @@ module DefaultForm
       else
         @theme = 'default'
       end
-      set_file = Rails.root.join('config/default_form.yml').existence || Engine.root.join('config/default_form.yml')
-      set = YAML.unsafe_load_file set_file
+      set  = X
       settings = set.fetch(@theme, {})
       settings.deep_symbolize_keys!
 

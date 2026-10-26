@@ -109,19 +109,6 @@ line:
     normal: field
   error:
     <<: *default_errors
-phone_line:
-  <<: *defaults
-  origin:
-    label: label text-grey
-    input: input
-    textarea: textarea
-    submit: button is-fullwidth is-primary
-  wrap:
-    input: control
-  all:
-    <<: *phone_all
-  error:
-    <<: *default_errors
 phone_default:
   <<: *phone
   form: form-fields as-boxed
@@ -130,8 +117,8 @@ phone_default:
     input: input
     textarea: textarea
     submit: button is-fullwidth is-primary
-    checkbox: weui-check
-    radio: weui-check
+    checkbox: checkbox
+    radio: radio
   wrap:
     <<: *phone_wrap
     checkbox: weui-cell__hd
@@ -153,6 +140,19 @@ phone_modal:
   wrap:
     <<: *phone_wrap
     submit: footer.modal-card-foot
+  all:
+    <<: *phone_all
+  error:
+    <<: *default_errors
+phone_line:
+  <<: *defaults
+  origin:
+    label: label text-grey
+    input: input
+    textarea: textarea
+    submit: button is-fullwidth is-primary
+  wrap:
+    input: control
   all:
     <<: *phone_all
   error:

@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.homepage = 'https://github.com/work-design/default_form.git'
   spec.summary = 'Summary of DefaultForm.'
   spec.description = 'Description of DefaultForm.'
-  spec.license = "MIT"
+  spec.license = 'MIT'
 
   spec.metadata["allowed_push_host"] = "Set to 'http://mygemserver.com'"
   spec.metadata["homepage_uri"] = spec.homepage
@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
     Dir[
       "{app,config,db,lib}/**/*",
-      "MIT-LICENSE",
+      'LICENSE',
       "Rakefile",
       "README.md"
     ]

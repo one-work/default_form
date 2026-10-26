@@ -204,12 +204,13 @@ module DefaultForm
         end
       end
 
-      def text_area(method, options = {})
+      def textarea(method, options = {})
         wrap_with(method, options, :normal) do |css|
           options[:class] = css.dig(:origin, :textarea) unless options.key?(:class)
           wrapping(super, wrap: css.dig(:wrap, :input))
         end
       end
+      alias_method :text_area, :textarea
 
       # block 应返回 input with wrapper 的内容
       # 注意：此处不要用解构参数 **options, 因为解构的 options object_id 会变。

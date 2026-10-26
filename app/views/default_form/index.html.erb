@@ -1,3 +1,8 @@
 <%= form_with do |f| %>
-  <%= f.text_field :text, label: 'Text' %>
+  <div class="form-horizontal">
+    <%= f.text_field :text, label: 'Text' %>
+    <%= f.textarea :textarea, label: 'Textarea' %>
+    <%= f.checkbox :checkbox, label: 'Checkbox' %>
+    <%= f.radio :radio, label: 'Radio' %>
+  </div>
 <% end %>

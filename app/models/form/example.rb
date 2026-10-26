@@ -1,4 +1,4 @@
-module DefaultForm
+module Form
   class Example < ApplicationRecord
     attribute :text, :string
     attribute :textarea, :string

@@ -1,4 +1,4 @@
-module DefaultForm
+module Form
   class HomeController < ApplicationController
 
     def index

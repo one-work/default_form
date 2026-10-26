@@ -1,8 +1,8 @@
 # DefaultForm
 Short description and motivation.
 
-## Usage
-How to use my plugin.
+## 示例
+[参考示例](https://one.work/default_form)
 
 ## Installation
 Add this line to your application's Gemfile:
@@ -24,5 +24,4 @@ $ gem install default_form
 ## Contributing
 Contribution directions go here.
 
-## License
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+

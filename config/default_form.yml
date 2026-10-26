@@ -46,8 +46,8 @@ phone_all: &phone_all
   error: field
   required: field
   select: field
-  checkbox: weui-cell weui-cell_active weui-cell_switch
-  radio: weui-cell weui-cell_active weui-cell_radio
+  checkbox: field
+  radio: field
 
 # 开始配置
 default:
@@ -119,8 +119,7 @@ phone_line:
   wrap:
     input: control
   all:
-    normal: field
-    required: field
+    <<: *phone_all
   error:
     <<: *default_errors
 phone_default:

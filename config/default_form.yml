@@ -10,6 +10,7 @@ _origin: &default_origins
   inline_checkbox_checked: checkbox
   inline_radio: radio
   inline_radio_checked: radio
+  submit: button is-primary
 _wrap: &default_wraps
   input: field-body > field > control
   select: field-body > field is-narrow > control > select is-fullwidth
@@ -60,7 +61,6 @@ default:
     <<: *default_origins
     label: label
     textarea: field textarea
-    submit: button is-primary
   before_wrap:
     <<: *default_before_wraps
     submit: field-label
@@ -201,6 +201,7 @@ fields:
 level:
   <<: *defaults
   origin:
+    <<: *default_origins
     label: button is-static
   all:
     normal: field has-addons

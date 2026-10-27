@@ -41,11 +41,5 @@ module DefaultForm
       super
     end
 
-    def submit_default_value
-      I18n.t "helpers.submit.#{@theme}", raise: true
-    rescue
-      super
-    end
-
   end
 end

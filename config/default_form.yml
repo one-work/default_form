@@ -14,8 +14,9 @@ _wrap: &default_wraps
   input: field-body > field > control
   select: field-body > field is-narrow > control > select is-fullwidth
   checkbox: field-body > field > control > checkbox
-  radios: field-body > field > control > checkbox
+  radio: field-body > field > control
   checkboxes: field-body > field is-narrow > control
+  radios: field-body > field > control > checkbox
 _wrap_label: &default_wrap_labels
   normal: field-label is-normal
   select: field-label is-normal
@@ -27,11 +28,13 @@ _all: &default_alls
   error: field is-horizontal
   select: field is-horizontal
   checkbox: field is-horizontal
+  radio: field is-horizontal
 _error: &default_errors
   input: input is-danger
 _before_wrap: &default_before_wraps
   checkboxes: field-label
   checkbox: field-label
+  radio: field-label
 _searches: &searches
   method: get
   placeholder: true

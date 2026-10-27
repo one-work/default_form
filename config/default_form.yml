@@ -175,6 +175,7 @@ inline:
   label: false
   form: field is-grouped
   origin:
+    <<: *default_origins
     input: input is-small
     submit: button is-small is-primary
 switch:

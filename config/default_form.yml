@@ -198,3 +198,13 @@ fields:
     input: field
   origin:
     <<: *default_origins
+level:
+  <<: *defaults
+  origin:
+    label: button is-static
+  all:
+    normal: field has-addons
+  wrap_label:
+    normal: control
+  wrap:
+    input: control is-expanded

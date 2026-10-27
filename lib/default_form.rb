@@ -10,8 +10,16 @@ require 'default_form/override/action_view/helpers/tags/collection_radio_buttons
 module DefaultForm
 
   def self.xx
-    set_file = Rails.root.join('config/default_form.yml').existence || Engine.root.join('config/default_form.yml')
-    YAML.unsafe_load_file set_file
+    set_file = YAML.unsafe_load_file Engine.root.join('config/default_form.yml')
+    set_file.reject! { |key, _| key.start_with?('_') }
+    if Rails.root.join('config/default_form.yml').exist?
+      init_hash = YAML.load_file(Rails.root.join('config/default_form.yml'))
+      set_file.each do |k, v|
+        h[k] ||= []
+        h[k].concat v
+      end
+    end
+    set_file
   end
 
 end

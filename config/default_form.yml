@@ -1,7 +1,7 @@
-defaults: &defaults
+_defaults: &defaults
   autocomplete: 'off' # 这里 off 必须字符串，否则会解析为 false
   label: true
-origin: &default_origins
+_origin: &default_origins
   label: label text-grey
   span: text-grey
   input: input
@@ -10,38 +10,38 @@ origin: &default_origins
   inline_checkbox_checked: checkbox
   inline_radio: radio
   inline_radio_checked: radio
-wrap: &default_wraps
+_wrap: &default_wraps
   input: field-body > field > control
   select: field-body > field is-narrow > control > select is-fullwidth
   checkbox: field-body > field > control > checkbox
   radios: field-body > field > control > checkbox
   checkboxes: field-body > field is-narrow > control
-wrap_label: &default_wrap_labels
+_wrap_label: &default_wrap_labels
   normal: field-label is-normal
   select: field-label is-normal
   checkbox: field-label is-normal
   checkboxes: field-label
-all: &default_alls
+_all: &default_alls
   normal: field is-horizontal
   required: field is-horizontal
   error: field is-horizontal
   select: field is-horizontal
   checkbox: field is-horizontal
-error: &default_errors
+_error: &default_errors
   input: input is-danger
-before_wrap: &default_before_wraps
+_before_wrap: &default_before_wraps
   checkboxes: field-label
   checkbox: field-label
-searches: &searches
+_searches: &searches
   method: get
   placeholder: true
   autocomplete: 'off'
-phone: &phone
+_phone: &phone
   <<: *defaults
-phone_wrap: &phone_wrap
+_phone_wrap: &phone_wrap
   input: control
   select: control > select is-fullwidth
-phone_all: &phone_all
+_phone_all: &phone_all
   normal: field
   error: field
   required: field

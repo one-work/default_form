@@ -202,6 +202,7 @@ level:
   <<: *defaults
   origin:
     <<: *default_origins
+    input: input text-right
     label: button is-static
   all:
     normal: field has-addons

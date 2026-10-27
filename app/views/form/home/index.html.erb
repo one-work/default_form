@@ -1,8 +1,6 @@
 <%= form_with theme: params.fetch(:theme, 'default'), model: @example do |f| %>
-  <div class="form-horizontal">
-    <%= f.text_field :text, label: 'Text' %>
-    <%= f.textarea :textarea, label: 'Textarea' %>
-    <%= f.checkbox :checkbox, label: 'Checkbox' %>
-    <%= f.radio_button :radio, label: 'Radio' %>
-  </div>
+  <%= f.text_field :text, label: 'Text' %>
+  <%= f.textarea :textarea, label: 'Textarea' %>
+  <%= f.checkbox :checkbox, label: 'Checkbox' %>
+  <%= f.radio_button :radio, label: 'Radio' %>
 <% end %>

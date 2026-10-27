@@ -55,6 +55,7 @@ _phone_all: &phone_all
 # 开始配置
 default:
   <<: *defaults
+  form: form-horizontal
   origin:
     <<: *default_origins
     label: label

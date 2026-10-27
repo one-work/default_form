@@ -1,8 +1,8 @@
 <div class="menu background-light is-fullheight radius">
   <span class="menu-label"></span>
   <div class="menu-list">
-    <% @catalogs.each do |catalog| %>
-      <%= link_to catalog.name, { action: 'show', slug: catalog.path }, class: active_helper(slug: catalog.path, active: 'is-active') %>
+    <% DefaultForm.settings.keys.each do |catalog| %>
+      <%= link_to catalog, { theme: catalog }, class: active_helper(theme: catalog, active: 'is-active') %>
     <% end %>
   </div>
 </div>

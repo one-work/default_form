@@ -9,7 +9,7 @@ require 'default_form/override/action_view/helpers/tags/collection_radio_buttons
 
 module DefaultForm
 
-  def self.xx
+  def self.settings
     set_file = YAML.unsafe_load_file Engine.root.join('config/default_form.yml')
     set_file.reject! { |key, _| key.start_with?('_') }
     if Rails.root.join('config/default_form.yml').exist?

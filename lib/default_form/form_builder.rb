@@ -17,7 +17,7 @@ module DefaultForm
       else
         @theme = 'default'
       end
-      set  = X
+      set = DefaultForm.settings
       settings = set.fetch(@theme, {})
       settings.deep_symbolize_keys!
 

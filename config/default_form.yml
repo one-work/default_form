@@ -59,7 +59,6 @@ default:
   form: form-horizontal
   origin:
     <<: *default_origins
-    label: label
     textarea: field textarea
   before_wrap:
     <<: *default_before_wraps
